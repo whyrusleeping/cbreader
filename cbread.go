@@ -10,7 +10,7 @@ type CBReader struct {
 }
 
 func (cbr *CBReader) Read(b []byte) (int, error) {
-	n, err := cbr.Read(b)
+	n, err := cbr.R.Read(b)
 	if err != nil {
 		return n, err
 	}
